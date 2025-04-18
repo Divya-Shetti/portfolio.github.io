@@ -1,0 +1,448 @@
+/* Importing Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+:root {
+  --primary: #021635;
+  --secondary: #4705a4;
+  --accent: #ff006e;
+  --background: #f8f9fa;
+  --white: #ffffff;
+  --text-dark: #1e1e1e;
+  --text-light: #6c757d;
+  --shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  --hover-dark: #d9005b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--background);
+  color: var(--text-dark);
+  line-height: 1.6;
+  padding: 0 1rem;
+}
+
+header {
+  background: linear-gradient(to right, var(--primary), var(--secondary));
+  color: var(--white);
+  padding: 3rem 1rem;
+  text-align: center;
+  border-radius: 0 0 24px 24px;
+  box-shadow: var(--shadow);
+}
+
+header h1 {
+  font-size: 2.8rem;
+  font-weight: 600;
+}
+
+nav {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+nav a {
+  background: var(--white);
+  color: var(--primary);
+  padding: 0.8rem 1.5rem;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: var(--shadow);
+  transition: all 0.3s ease-in-out;
+}
+
+nav a:hover {
+  background: var(--primary);
+  color: var(--white);
+}
+
+section {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: var(--white);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease;
+}
+
+section:hover {
+  transform: scale(1.01);
+}
+
+section h2 {
+  font-size: 2rem;
+  color: var(--secondary);
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.intro-text {
+  font-weight: 600;
+  color: var(--text-dark);
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.card {
+  background: #f0f4ff;
+  border-left: 5px solid var(--primary);
+  padding: 1.2rem;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+  box-shadow: var(--shadow);
+}
+
+.card a {
+  text-decoration: none;
+  color: var(--primary);
+}
+
+.card a:hover {
+  color: var(--secondary);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-form label {
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 1rem;
+  border: 2px solid var(--primary);
+  border-radius: 8px;
+  background: #f0f4ff;
+  font-size: 1rem;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: var(--secondary);
+  background: #e6ecff;
+}
+
+.contact-form button {
+  align-self: flex-start;
+  background: var(--accent);
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: var(--shadow);
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: var(--hover-dark);
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  color: var(--text-light);
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  background: #f8f9fa;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  section {
+    padding: 1.5rem;
+  }
+
+  header h1 {
+    font-size: 2.5rem;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.google-icon-container {
+  display: flex;
+  align-items: center; /* Vertically center the image with text */
+}
+
+.google-icon-left {
+  width: 130px; /* Adjust the size as needed */
+  height: auto;
+  margin-right: 10px; /* Space between icon and text */
+}
+.business-cards-container {
+  display: flex;
+  flex-direction: column; /* Stacks the cards vertically */
+  gap: 20px; /* Adds space between the cards */
+}
+
+.business-card {
+  background: #f0f4ff; /* Similar background color */
+  border-top: 5px solid var(--primary); /* Left border with primary color */
+  padding: 1.2rem; /* Same padding */
+  border-radius: 10px; /* Rounded corners */
+  margin-bottom: 1.5rem; /* Space below each card */
+  box-shadow: var(--shadow); /* Box shadow as per your design */
+  width: 100%; /* Full width of the container */
+  box-sizing: border-box;
+}
+
+.business-card a {
+  text-decoration: none;
+  color: var(--primary); /* Primary color for links */
+}
+
+.business-card a:hover {
+  color: var(--secondary); /* Secondary color for hover effect */
+}
+
+@media (max-width: 768px) {
+  .business-card {
+    width: 100%; /* Ensure cards stack on top of each other on smaller screens */
+  }
+}
+
+  .contact-form .form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+  }
+
+  .contact-form label {
+    width: 80px;
+    margin-right: 10px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    flex: 1;
+    padding: 8px;
+    font-size: 1em;
+  }
+
+  .contact-form textarea {
+    resize: vertical;
+  }
+
+ /* Styling for the Business Cards Container */
+.business-cards-container2 {
+  display: flex;
+  justify-content: space-between; /* Places cards side by side */
+  gap: 20px; /* Adds space between the cards */
+  margin-top: 20px;
+}
+
+/* General Business Card Styling */
+.business-card2 {
+  background: #f0f4ff; /* Light background */
+  border-top: 5px solid var(--primary); /* Top border with primary color */
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: var(--shadow); /* Box shadow for subtle effect */
+  width: 48%; /* Makes the cards take up 48% of the available width */
+  box-sizing: border-box;
+}
+
+/* Technical Card Styling */
+#technical-card {
+  background-color: #e7f0fd; /* Light green background for technical skills */
+  border-top: 5px solid var(--secondary); /* Left border in secondary color */
+}
+
+/* Soft Card Styling */
+#soft-card {
+  background-color: #e7f0fd; /* Light blue background for soft skills */
+  border-top: 5px solid var(--secondary); /* Left border in accent color */
+}
+
+/* Heading Styling */
+.business-card2 h3 {
+  color: var(--primary); /* Heading color */
+  font-size: 1.2rem;
+}
+
+/* List Item Styling */
+.business-card2 ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.business-card2 li {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: var(--text-dark);
+}
+
+/* Responsive Design: Stack cards vertically on smaller screens */
+@media (max-width: 768px) {
+  .business-cards-container2 {
+    flex-direction: column; /* Stacks the cards vertically */
+    gap: 10px; /* Reduces gap between cards */
+  }
+
+  .business-card2 {
+    width: 100%; /* Ensures cards take full width on smaller screens */
+  }
+}
+
+
+
+#about-header {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  padding: 20px;
+  text-align: center;
+}
+
+#about-header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+#about-header-subtitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+#about-footer {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  padding: 15px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+#about-scrollable-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+/* Navigation Styles */
+#about-nav {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+#about-nav a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+#about-nav a:hover {
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+}
+
+/* About Section Styles */
+#about-me-section {
+  margin-top: 30px;
+}
+
+#about-me-heading {
+  font-size: 2rem;
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--secondary-color);
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+}
+
+#about-me-section div {
+  margin-bottom: 30px;
+}
+
+#bio-section p {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+#bio-section em {
+  font-style: italic;
+  color: var(--accent-color);
+}
+
+.about-section h3 {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.about-section ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.about-section p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--text-light);
+}
+
+.about-section div {
+  background-color: var(--white-color);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  padding: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #about-header h1 {
+    font-size: 2rem;
+  }
+
+  #about-header-subtitle {
+    font-size: 1rem;
+  }
+
+  #about-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #about-nav a {
+    margin: 10px 0;
+  }
+
+  #about-me-heading {
+    font-size: 1.8rem;
+  }
+}
+
+.aspiration-section h2 {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.aspiration-section p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--text-light);
+}
