@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Company Case Studies</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Product+Sans:wght@400;700&display=swap"
+        rel="stylesheet"
+    />
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <span class="blue">G</span
+                ><span class="red">o</span
+                ><span class="yellow">o</span
+                ><span class="blue">g</span
+                ><span class="green">l</span
+                ><span class="red">e</span>
+                <span class="portfolio-text"> Portfolio</span>
+            </div>
+            <ul>
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="business-cases.html">Business Cases</a></li>
+                <li><a href="company-cases.html">Company Use Cases</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="company-hero" class="hero">
+        <div class="hero-content">
+            <h1><span class="highlight">Company Innovations</span></h1>
+            <h2><span class="typing"></span></h2>
+            <div class="cta-buttons">
+                <a href="#" class="case-nav-btn active" data-target="case1">Google Quantum AI</a>
+                <a href="#" class="case-nav-btn" data-target="case2">Google Gemini</a>
+                <a href="#" class="case-nav-btn" data-target="case3">Google Tools- 2025 </a>
+            </div>
+        </div>
+        <div class="scroll-down">
+            <a href="#cases"><i class="fas fa-chevron-down"></i></a>
+        </div>
+    </section>
+
+    <section id="cases" class="cases-section">
+        <div class="container">
+            <!--
+            <div id="case1" class="case-study active">
+                <h2 class="section-title">Case 1: Google Quantum AI</h2>
+
+                <div class="case-section">
+                    <h4>Overview</h4>
+                    <p>
+                        Google's Quantum AI initiative aims to harness quantum computing
+                        to solve complex problems that classical computers find challenging.
+                    </p>
+                </div>
+
+                <div class="case-section">
+                    <h4>What It Does</h4>
+                    <p>
+                        Google’s quantum processors attempt to accelerate optimization,
+                        simulation, and machine learning tasks by leveraging quantum
+                        algorithms.
+                    </p>
+                </div>
+
+                <div class="case-section">
+                    <h4>Significance &amp; Business Impact</h4>
+                    <ul>
+                        <li>
+                            Potential to revolutionize drug discovery through faster molecular
+                            simulations
+                        </li>
+                        <li>Optimization improvements in logistics and materials science</li>
+                        <li>
+                            Exploration of new AI models that classical systems cannot
+                            efficiently compute
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="case-section">
+                    <h4>Research &amp; Insights</h4>
+                    <p>
+                        Though the exact proprietary algorithms and code are not publicly
+                        available, Google has published papers on quantum supremacy and
+                        related algorithms like the Variational Quantum Eigensolver (VQE).
+                    </p>
+                </div>
+
+                <div class="case-section">
+                    <h4>My Thoughts</h4>
+                    <p>
+                        This use case demonstrates cutting-edge innovation, and while the
+                        underlying technology is complex, its potential impact on industries
+                        is vast. Understanding and adapting such advances could position
+                        future tech solutions on the frontier of AI and computing.
+                    </p>
+                </div>
+
+                <div class="case-section">
+                    <h4>Technology Stack</h4>
+                    <p>
+                        <strong>Languages:</strong> Python (Cirq)<br />
+                        <strong>Hardware:</strong> Superconducting Qubits, Surface Code<br />
+                        <strong>Research Paper:</strong>
+                        <a
+                            href="https://doi.org/10.1038/s41586-024-08449-y"
+                            target="_blank"
+                            >Nature, 2024</a
+                        >
+                    </p>
+                </div>
+
+                <div class="case-section">
+                    <h4>Applications</h4>
+                    <ul>
+                        <li>Drug discovery through quantum simulation</li>
+                        <li>Secure communications via quantum cryptography</li>
+                        <li>Accelerating AI models using quantum machine learning</li>
+                    </ul>
+                </div>
+
+                <div class="case-section">
+                    <h4>Architecture Insight</h4>
+                    <img
+                        src="https://via.placeholder.com/600x300?text=Qubit+Error+Correction+System"
+                        alt="System Diagram"
+                    />
+                </div>
+
+                <div class="case-section">
+                    <h4>Complexity Overview</h4>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Algorithm</th>
+                                <th>Time Complexity</th>
+                                <th>Qubit Requirement</th>
+                                <th>Use Case</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Random Circuit Sampling</td>
+                                <td>Exponential (classical)</td>
+                                <td>50+</td>
+                                <td>Quantum supremacy</td>
+                            </tr>
+                            <tr>
+                                <td>QAOA</td>
+                                <td>Problem-dependent</td>
+                                <td>Scalable</td>
+                                <td>Optimization</td>
+                            </tr>
+                            <tr>
+                                <td>VQE</td>
+                                <td>Ansatz-specific</td>
+                                <td>~20–50</td>
+                                <td>Quantum chemistry</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <br>
+                <div class="case-section">
+                    <h3>References</h3>
+                    <ul>
+                        <li><a href="https://medium.com/@sarthakanand/page-rank-b7072c61dd85" class="github-link" target="_blank">PageRank - Medium</a></li>
+                        <li><a href="https://arxiv.org/abs/2112.03462" class="github-link" target="_blank">SpaceSaving: An Optimal Algorithm for Frequency Estimation and Frequent items in the Bounded Deletion Model - arxiv.org</a></li>
+                        <li><a href="https://medium.com/@sarthakjoshi_9398/understanding-locality-sensitive-hashing-lsh-a-powerful-technique-for-similarity-search-a95b090bdc4a" class="github-link" target="_blank">Understanding Locality Sensitive Hashing(LSH): A Powerful Technique for Similarity Search. - Medium</a></li>
+                        </ul>
+                </div>
+            </div>-->
+
+            <div id="case1" class="case-study active">
+                <h2 class="section-title">Case 1: Google Quantum AI</h2>
+
+                <div class="case-section">
+                    <h4>Overview &amp; Problem Statement</h4>
+                    <p>
+                        Google's Quantum AI initiative aims to harness quantum computing to solve complex problems that classical computers find challenging.
+                        The Quantum processors are designed to accelerate tasks in optimization, simulation, and machine learning using advanced quantum algorithms.
+                    </p>
+                    <br>
+                    <p>
+                        The primary goal is to enable quantum computers to outperform classical systems in specific problem domains, such as:
+                    </p>
+                    <ul>
+                        <li>Sampling problems that are computationally intensive</li>
+                        <li>Optimization tasks with large solution spaces</li>
+                        <li>Quantum chemistry simulations requiring high accuracy</li>
+                    </ul>
+                </div>
+
+                
+
+                <div class="case-section">
+                    <h4>Challenges</h4>
+                    <ul>
+                        <li>Building stable, error-corrected qubits</li>
+                        <li>Minimizing decoherence and noise</li>
+                        <li>Scaling qubit counts while keeping error rates in check</li>
+                        <li>Developing algorithms for NISQ (Noisy Intermediate-Scale Quantum) devices</li>
+                    </ul>
+                </div>
+
+                <div class="case-section">
+                    <h4>Existing Design & Algorithms</h4>
+                    <ul>
+                        <li><strong>Processor:</strong> Sycamore (54-qubit superconducting chip)</li>
+                        <li><strong>Algorithms:</strong>
+                            <ul>
+                                <li>Quantum Supremacy (random circuit sampling)</li>
+                                <li>QAOA – Quantum Approximate Optimization Algorithm</li>
+                                <li>VQE – Variational Quantum Eigensolver</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="case-section">
+                    <h4>Complexity Overview</h4>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Algorithm</th>
+                                <th>Time Complexity</th>
+                                <th>Qubit Requirement</th>
+                                <th>Use Case</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Random Circuit Sampling</td>
+                                <td>Exponential (classical)</td>
+                                <td>50+</td>
+                                <td>Quantum supremacy</td>
+                            </tr>
+                            <tr>
+                                <td>QAOA</td>
+                                <td>Problem-dependent</td>
+                                <td>Scalable</td>
+                                <td>Optimization</td>
+                            </tr>
+                            <tr>
+                                <td>VQE</td>
+                                <td>Ansatz-specific</td>
+                                <td>~20–50</td>
+                                <td>Quantum chemistry</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="case-section">
+                    <h4>Real-time Usage & Figures</h4>
+                    <ul>
+                        <li>2019: Sycamore solved a problem in 200 seconds vs. 10,000 years on a classical supercomputer</li>
+                        <li>Applications in quantum chemistry, cryptography, and ML prototypes</li>
+                        <li>NISQ devices currently support ~50–100 noisy qubits</li>
+                    </ul>
+                </div>
+
+                <div class="case-section">
+                    <h4>Other Applicable Algorithms</h4>
+                    <ul>
+                        <li>Quantum Phase Estimation</li>
+                        <li>Grover’s Search</li>
+                        <li>Quantum Fourier Transform</li>
+                        <li>Quantum Machine Learning: QSVM, QNN</li>
+                    </ul>
+                </div>
+
+                
+
+                <div class="case-section">
+                    <h4>Benefits & Business Impact</h4>
+                    <ul>
+                        <li>Exponential speedups for specific computational tasks</li>
+                        <li>Breakthroughs in optimization, simulation, and logistics</li>
+                        <li>Revolutionizing drug discovery via quantum chemistry simulation</li>
+                        <li>Enabling quantum-native AI systems beyond classical capabilities</li>
+                        <li>Advancing quantum hardware/software co-design innovation</li>
+                        <li>Unlocking new efficiencies in materials science and secure communication</li>
+                    </ul>
+                </div>
+
+
+                <div class="case-section">
+                    <h4>Research &amp; Insights</h4>
+                    <p>
+                        Though the exact proprietary algorithms and code are not publicly
+                        available, Google has published papers on quantum supremacy and
+                        related algorithms like the Variational Quantum Eigensolver (VQE).
+                    </p>
+                </div>
+
+                <div class="case-section">
+                    <h4>My Thoughts</h4>
+                    <p>
+                        This use case demonstrates cutting-edge innovation, and while the underlying technology is complex,
+                        its potential impact on industries is vast. Understanding and adapting such advances could position
+                        future tech solutions on the frontier of AI and computing. An interesting coding approach I found
+                        valuable is <strong>dynamically generating qubits</strong>,this enables scalable, cleaner circuits and supports 
+                        adaptable quantum algorithm design more effectively than static declarations.
+                    </p>
+                </div>
+
+
+                <div class="case-section">
+                    <h4>Technology Stack</h4>
+                    <p>
+                        <strong>Languages:</strong> Python (Cirq)<br />
+                        <strong>Hardware:</strong> Superconducting Qubits, Surface Code<br />
+                        <strong>Research Paper:</strong>
+                        <a href="https://www.nature.com/articles/s41586-024-08449-y.pdf" target="_blank">Nature, 2024</a>
+                    </p>
+                </div>
+
+                <div class="case-section">
+                    <h4>Applications</h4>
+                    <ul>
+                        <li>Drug discovery through quantum simulation</li>
+                        <li>Secure communications via quantum cryptography</li>
+                        <li>Accelerating AI models using quantum machine learning</li>
+                    </ul>
+                </div>
+
+                <div class="case-section">
+                    <h4>Architecture Insight</h4>
+                    <img src="images/qai.jpg" style="width:1000px; height:auto;" alt="System Diagram src: Google Research" />
+                </div>
+
+                <div class="case-section">
+                    <h4>References</h4>
+                    <ul>
+                        <li><a href="https://quantumai.google/" class="github-link" target="_blank">Google Quantum AI</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=W7ppd_RY-UE" class="github-link" target="_blank">YouTube: Google Quantum AI</a></li>
+                        <li><a href="https://research.google/blog/quantum-supremacy-using-a-programmable-superconducting-processor/" class="github-link" target="_blank">Google Research: Quantum Supremacy Using a Programmable Superconducting Processor</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="case2" class="case-study">
+                <h2 class="section-title">Case 2: Advancements in Gemini AI</h2>
+
+                <div class="case-section">
+                    <h4>Overview &amp; Problem Statement</h4>
+                    <p>
+                        Gemini AI represents a next-generation artificial intelligence system integrating large language models
+                        with advanced reasoning and multimodal capabilities to deliver highly contextual, accurate, and creative AI responses.
+                    </p>
+                    <br>
+                    <p>
+                        The core goal is to push AI beyond current limits by enabling:
+                    </p>
+                    <ul>
+                        <li>Multimodal understanding combining text, images, and other data streams</li>
+                        <li>Improved contextual reasoning for complex problem-solving</li>
+                        <li>Adaptive learning that customizes interactions dynamically</li>
+                    </ul>
+                </div>
+
+                <div class="case-section">
+                    <h4>Challenges</h4>
+                    <ul>
+                        <li>Balancing model size with efficiency and latency</li>
+                        <li>Ensuring robust understanding across diverse inputs</li>
+                        <li>Maintaining ethical considerations and bias mitigation</li>
+                        <li>Scaling multimodal models while preserving accuracy</li>
+                    </ul>
+                </div>
+
+                <div class="case-section">
+                    <h4>Existing Design & Algorithms</h4>
+                    <ul>
+                        <li><strong>Architecture:</strong> Transformer-based large language and vision models</li>
+                        <li><strong>Key Components:</strong>
+                            <ul>
+                                <li>Multimodal encoders integrating language and vision data</li>
+                                <li>Few-shot and zero-shot learning algorithms</li>
+                                <li>Reinforcement learning with human feedback (RLHF)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="case-section">
+                    <h4>Complexity Overview</h4>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Model</th>
+                                <th>Compute Complexity</th>
+                                <th>Data Requirements</th>
+                                <th>Use Case</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Gemini Core Transformer</td>
+                                <td>O(n²) with respect to input length</td>
+                                <td>Massive multimodal datasets</td>
+                                <td>General AI reasoning</td>
+                            </tr>
+                            <tr>
+                                <td>Vision-Language Fusion</td>
+                                <td>Varies by input size and modality</td>
+                                <td>Image and text paired data</td>
+                                <td>Multimodal understanding</td>
+                            </tr>
+                            <tr>
+                                <td>RLHF Optimization</td>
+                                <td>Dependent on feedback iterations</td>
+                                <td>Human-labeled preference data</td>
+                                <td>Response alignment and safety</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="case-section">
+                    <h4>Real-time Usage & Figures</h4>
+                    <ul>
+                        <li>Deployment across search, chatbots, and content generation platforms</li>
+                        <li>Demonstrated improvements in contextual accuracy and reduced hallucinations</li>
+                        <li>Supports millions of concurrent users worldwide</li>
+                    </ul>
+                </div>
+
+                <div class="case-section">
+                    <h4>Other Applicable Algorithms</h4>
+                    <ul>
+                        <li>Attention Mechanisms (Self and Cross Attention)</li>
+                        <li>Contrastive Learning for multimodal alignment</li>
+                        <li>Knowledge Distillation to optimize model size</li>
+                        <li>Federated Learning for privacy-preserving model updates</li>
+                    </ul>
+                </div>
+
+                <div class="case-section">
+                    <h4>Benefits & Business Impact</h4>
+                    <ul>
+                        <li>Enhanced AI usability across diverse domains and media</li>
+                        <li>More natural and accurate AI-human interactions</li>
+                        <li>Reduced content creation costs through automation</li>
+                        <li>Improved decision making via AI-powered insights</li>
+                        <li>Innovations in AI safety and ethics integration</li>
+                    </ul>
+                </div>
+
+                <div class="case-section">
+                    <h4>Research &amp; Insights</h4>
+                    <p>
+                        Gemini AI builds on recent advances in large language models and multimodal transformers, incorporating
+                        extensive human feedback loops and privacy-aware learning. The project emphasizes robust, ethical AI deployment.
+                    </p>
+                </div>
+
+                <div class="case-section">
+                    <h4>My Thoughts</h4>
+                    <p>
+                        Gemini AI exemplifies the next frontier of AI, merging multiple data streams into cohesive understanding.
+                        The challenge of balancing scale with responsiveness is notable, and I find the integration of
+                        adaptive learning and ethical safeguards particularly promising for real-world applications.
+                    </p>
+                </div>
+
+                <div class="case-section">
+                    <h4>Technology Stack</h4>
+                    <p>
+                        <strong>Languages:</strong> Python, TensorFlow, JAX<br />
+                        <strong>Hardware:</strong> TPU clusters, GPU farms<br />
+                        <strong>Frameworks:</strong> Transformers, RL frameworks<br />
+                        <strong>Research Paper:</strong> <a href="https://arxiv.org/abs/2305.15012" target="_blank">Gemini AI Architecture, 2024</a>
+                    </p>
+                </div>
+
+                <div class="case-section">
+                    <h4>Applications</h4>
+                    <ul>
+                        <li>Enhanced search and recommendation systems</li>
+                        <li>Multimodal chatbots and virtual assistants</li>
+                        <li>Automated content generation across text and images</li>
+                    </ul>
+                </div>
+
+                
+
+                <div class="case-section">
+                    <h4>References</h4>
+                    <ul>
+                        <li><a href="https://gemini.ai/" class="github-link" target="_blank">Official Gemini AI Site</a></li>
+                        <li><a href="https://arxiv.org/abs/2305.15012" class="github-link" target="_blank">Gemini AI Architecture Paper</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=example" class="github-link" target="_blank">YouTube: Gemini AI Overview</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="case3" class="case-study">
+                <h2 class="section-title">Google in 2025</h2>
+
+                <div class="card">
+                    <h4>1. 🚀 Google Beam, Gemini, Meet, Astra</h4>
+                    <ul>
+                        <li>1.1 Google Beam is an AI-driven video communication platform that creates immersive 3D experiences using multiple cameras.</li>
+                        <li>1.2 Gemini enables real-time speech translation in meetings, breaking language barriers.</li>
+                        <li>1.3 Google Meet supports real-time speech translation for English and Spanish.</li>
+                        <li>1.4 Project Astra is an advanced AI assistant that uses your phone's camera for real-world interactions.</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h4>2. 🤖 Gemini with improved voice, memory, and control</h4>
+                    <ul>
+                        <li>2.1 Handles object misidentification situations.</li>
+                        <li>2.2 Improved voice, memory, and device control; useful for tasks like accessing manuals.</li>
+                        <li>2.3 Assists with bike-related tasks: repair videos, stock checks, emails, and manuals.</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h4>3. 🤖 Project Mariner and Gemini API/SDK</h4>
+                    <ul>
+                        <li>3.1 Advanced AI agent with up to 10 concurrent tasks.</li>
+                        <li>3.2 "Teach and repeat" features; Gemini API to be released soon.</li>
+                        <li>3.3 Agent ecosystem powered by Gemini SDK and Agent Mode.</li>
+                        <li>3.4 Helps users with apartment searches and tour scheduling.</li>
+                        <li>3.5 Adds personal memory features for better app recommendations.</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h4>4. 🚀 Gemini 2.5 Models</h4>
+                    <ul>
+                        <li>4.1 Personalized smart replies in Gmail.</li>
+                        <li>4.2 Flash model: better speed, cost-efficiency.</li>
+                        <li>4.3 Deep Think mode in Gemini 2.5 Pro improves performance.</li>
+                        <li>4.4 Strong benchmark performance with safety reviews pending.</li>
+                        <li>4.5 Gemini diffusion for parallel, faster text/code generation.</li>
+                        <li>4.6 Advanced audio + multilingual coding support.</li>
+                        <li>4.7 3D experience web app via AI Studio.</li>
+                        <li>4.8 Sketch-to-code 3D animation generation.</li>
+                        <li>4.9 Chrome-based multimodal animation creation app.</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h4>5. 🚀 Gemini AI with Coding Agent Jules</h4>
+                    <ul>
+                        <li>5.1 Jules automates complex coding tasks.</li>
+                        <li>5.2 AI overviews now serve 1.5B+ monthly users.</li>
+                        <li>5.3 Supports long, complex queries in Search.</li>
+                        <li>5.4 AI Mode launched in the US with personalized responses.</li>
+                        <li>5.5 Query fanout technique improves information retrieval.</li>
+                        <li>5.6 Deep search offers expert-level, personalized results.</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h4>6. 🚀 Dynamic Search, Experiments & Tools</h4>
+                    <ul>
+                        <li>6.1 AI Search generates personalized data visualizations.</li>
+                        <li>6.2 Streamlines event ticket searches and purchases.</li>
+                        <li>6.3 Launch of "Search Live" using Google Lens.</li>
+                        <li>6.4 AI Try-On for realistic virtual clothing fits.</li>
+                        <li>6.5 Agentic checkout auto-buys when prices drop.</li>
+                        <li>6.6 Gemini Live supports screen/cam share, 45+ languages.</li>
+                        <li>6.7 Imagine 4 boosts image/text editing in Gemini.</li>
+                        <li>6.8 V3 video model: better visuals, physics, audio.</li>
+                        <li>6.9 Flow AI tool simplifies filmmaking with precision.</li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="scroll-up" style="display: flex;justify-content: center;">
+            <a href="#company-hero"><i class="fas fa-chevron-up"></i></a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 My Google Portfolio. Inspired by Google Research and Innovation.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        // Typing animation
+        var typed = new Typed('.typing', {
+            strings: ['Real-World Impact', 'Research', 'Innovation', 'Tech that Scales'],
+            typeSpeed: 50,
+            backSpeed: 30,
+            loop: true,
+        });
+
+        const navButtons = document.querySelectorAll('.case-nav-btn');
+        const caseSections = document.querySelectorAll('.case-study');
+
+        navButtons.forEach((btn) => {
+            btn.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                navButtons.forEach((b) => b.classList.remove('active'));
+                this.classList.add('active');
+
+                caseSections.forEach((section) => section.classList.remove('active'));
+
+                const targetId = this.getAttribute('data-target');
+                const targetSection = document.getElementById(targetId);
+                targetSection.classList.add('active');
+
+                setTimeout(() => {
+                    document.getElementById('cases').scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start',
+                    });
+                }, 50);
+            });
+        });
+
+        window.addEventListener('load', () => {
+            const hash = window.location.hash;
+
+            if (hash === '#cases' || !hash) {
+                window.scrollTo(0, 0);
+                document.querySelectorAll('.case-study').forEach((section) => {
+                    section.classList.remove('active');
+                });
+                document.getElementById('case1').classList.add('active');
+
+                document.querySelectorAll('.case-nav-btn').forEach((btn) =>
+                    btn.classList.remove('active')
+                );
+                document
+                    .querySelector('.case-nav-btn[data-target="case1"]')
+                    .classList.add('active');
+                return;
+            }
+
+            const caseId = hash.substring(1);
+            if (document.getElementById(caseId)) {
+                document.querySelectorAll('.case-study').forEach((section) => {
+                    section.classList.remove('active');
+                });
+                document.querySelectorAll('.case-nav-btn').forEach((btn) =>
+                    btn.classList.remove('active')
+                );
+
+                const activeCase = document.getElementById(caseId);
+                activeCase.classList.add('active');
+
+                const activeBtn = document.querySelector(`.case-nav-btn[data-target="${caseId}"]`);
+                if (activeBtn) activeBtn.classList.add('active');
+
+                activeCase.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        });
+    </script>
+</body>
+</html>

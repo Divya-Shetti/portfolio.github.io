@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Google Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Product+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <div class="logo">
+                <span class="blue">G</span><span class="red">o</span><span class="yellow">o</span><span class="blue">g</span><span class="green">l</span><span class="red">e</span>
+                <span class="portfolio-text"> Portfolio</span>
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="business-cases.html#cases">Business Cases</a></li>
+                <li><a href="company-cases.html">Company Use Cases</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Hello, I'm <span class="highlight">Divyashree Shetti</span></h1>
+            <h2>Aspiring <span class="typing"></span></h2>
+            <p>Building innovative solutions with Google's philosophy in mind</p>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn">View My Work</a>
+                <a href="business-cases.html" class="btn">View Business Cases</a>
+                <a href="company-cases.html" class="btn">View Company Innovations</a>
+                <a href="#contact" class="btn-outline">Contact Me</a>
+            </div>
+        </div>
+        <div class="scroll-down">
+            <a href="#about"><i class="fas fa-chevron-down"></i></a>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <h3>Who I Am</h3>
+                    <p>I'm <strong>Divyashree Shetti</strong>, a third-year <strong> Computer Science Engineering student at KLE Technological University, Hubli</strong>. I have a strong interest in <strong>backend development</strong>. I’m passionate about system design, scalable cloud solutions, and software development. Driven by curiosity and a problem-solving mindset, I enjoy working in collaborative environments to build meaningful and efficient systems.</p>
+
+                    <h3>Why This Portfolio</h3>
+                    <p>This collection showcases my ability to  analyse and handle complex problems with innovative thinking and technical excellence - qualities that align with Google's mission to organize the world's information.</p>
+                    
+                    <h3>Why Google</h3>
+                    <p>Google's culture of innovation, commitment to solving challenging problems, and impact at global scale inspires me. I want to contribute to projects that improve lives sustainably, while pushing technological boundaries.</p>
+                </div>
+                <!--
+                <div class="about-photo">
+                    <img src="images/profile.jpg" alt="Divyashree Shetti" />
+                </div>
+                -->
+                <div class="skills-chart">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <p>Back-End Development (Node.js, Python, C++)</p>
+                        <div class="skill-bar">
+                            <div class="skill-level bd">90%</div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <p>Web Development (MERN, Socket.io, Zustand)</p>
+                        <div class="skill-bar">
+                            <div class="skill-level wd">85%</div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill">
+                        <p>System Design (Workflow Design, REST API Planning) </p>
+                        <div class="skill-bar">
+                            <div class="skill-level sd">75%</div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <p>Cloud Computing (Docker, Kubernetes, Ansible)</p>
+                        <div class="skill-bar">
+                            <div class="skill-level cc">70%</div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <p>Database Management (MySQL, MongoDB)</p>
+                        <div class="skill-bar">
+                            <div class="skill-level dm">70%</div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <p>Version Control (Git, GitHub)</p>
+                        <div class="skill-bar">
+                            <div class="skill-level vc">65%</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--
+                <div class="skills-chart">
+                    <h3>Quick Facts About Me</h3>
+
+                    <div class="skill">
+                        <p><strong>Education:</strong> Third-year Computer Science Engineering student at KLE Technological University.</p>
+                    </div>
+
+                    <div class="skill">
+                        <p><strong>Interests:</strong> Passionate about building meaningful tech backend — especially in the areas of <strong>web development, cloud systems, and user-focused applications</strong>.</p>
+                    </div>
+
+                    <div class="skill">
+                        <p><strong>Creative Side:</strong> I enjoy reading, sketching and painting in my free time.</p>
+                    </div>
+
+                    <div class="skill">
+                        <p><strong>Problem Solving:</strong> Regularly practicing and learning problem solving and logic building questions from different platforms.</p>
+                    </div>
+
+                    <div class="skill">
+                        <p><strong>Team Spirit:</strong> I thrive in collaborative environments and would love to work together for making an impact in the digital world.</p>
+                    </div>
+                </div>
+                -->
+
+
+            </div>
+            
+<div class="portfolio-summary">
+    <h3>Portfolio Summary</h3>
+    <table border="1" cellpadding="5" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Case No.</th>
+                <th>Business Domain</th>
+                <th>Main Algorithm(s) Used</th>
+                <th>View Page</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Case 1 -->
+            <tr>
+                <td>1</td>
+                <td>Search Autocompletion</td>
+                <td>
+                    <a href="business-cases.html#case1_wfst">Weighted FST</a><br>
+                    <a href="business-cases.html#case1_tries">Trie</a><br>
+                    <a href="business-cases.html#case1_tst">Ternary Search Tree</a>
+                </td>
+                <td><a href="business-cases.html#case1">View All</a></td>
+            </tr>
+            <!-- Case 2 -->
+            <tr>
+                <td>2</td>
+                <td>Route Assessment</td>
+                <td>
+                    <a href="business-cases.html#case2_dijkstra">Dijkstra's</a><br>
+                    <a href="business-cases.html#case2_astar">A*</a><br>
+                    <a href="business-cases.html#case2_rtree">R-tree</a><br>
+                    <a href="business-cases.html#case2_fordf">Ford Fulkerson</a>
+                </td>
+                <td><a href="business-cases.html#case2">View All</a></td>
+            </tr>
+            <!-- Case 3 -->
+            <tr>
+                <td>3</td>
+                <td>Data Storage and Indexing</td>
+                <td>
+                    <a href="business-cases.html#case3_btree">B-trees</a><br>
+                    <a href="business-cases.html#case3_rbtree">Red Black Trees</a><br>
+                    <a href="business-cases.html#case3_skiplists">Skiplists</a>
+                </td>
+                <td><a href="business-cases.html#case3">View All</a></td>
+            </tr>
+            <!-- Case 4 -->
+            <tr>
+                <td>4</td>
+                <td>Real-Time Analytics and Monitoring</td>
+                <td>
+                    <a href="business-cases.html#case4_fenwick">Fenwick trees</a><br>
+                    <a href="business-cases.html#case4_segmenttree">Segment trees</a>
+                </td>
+                <td><a href="business-cases.html#case4">View All</a></td>
+            </tr>
+            <!-- Case 5 -->
+            <tr>
+                <td>5</td>
+                <td>Content Ranking and Personalization</td>
+                <td>
+                    <a href="business-cases.html#case5_pagerank">Pagerank</a><br>
+                    <a href="business-cases.html#case5_spacesaving">Space Saving Algorithm</a><br>
+                    <a href="business-cases.html#case5_lsh">Locality Sensitive Hashing</a>
+                </td>
+                <td><a href="business-cases.html#case5">View All</a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+        </div>
+    </section>
+
+    <!-- NEW PROJECTS SECTION -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                 <!--
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x250?text=Project+1" alt="Logistics Optimization">
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Logistics Optimization System</h3>
+                        <p class="project-tech">Python • Graph Algorithms • Google Maps API</p>
+                        <p>Developed a route optimization system that reduced delivery times by 22% using graph algorithms and spatial analysis.</p>
+                        <div class="project-tags">
+                            <span class="tag">Algorithms</span>
+                            <span class="tag">Optimization</span>
+                            <span class="tag">Logistics</span>
+                        </div>
+                    </div>
+                </div>
+                -->
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://dezyre.gumlet.io/images/blog/fake-news-detection-project/Fake_News_Detection_Project.png?w=576&dpr=1.3" alt="Fake News Detection">
+                        <!--<div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>-->
+                    </div>
+                    <div class="project-content">
+                        <h3>Fake News Detection using Ensemble Learning</h3>
+                        <p class="project-tech">Python • PyTorch • Sklearn • BERT</p>
+                        <p>Built a system to detect fake news using 8 classification models, 3 ensemble learning techniques and BERT embeddings. Published in INCOFT 2025 proceedings.</p>
+                        <div class="project-tags">
+                            <span class="tag">NLP</span>
+                            <span class="tag">BERT</span>
+                            <span class="tag">Ensemble Learning</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://pixelz.cc/wp-content/uploads/2019/05/nvidia-logo-uhd-4k-wallpaper.jpg" alt="HSL Bytecode System">
+                        <!--<div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>-->
+                    </div>
+                    <div class="project-content">
+                        <h3>NVIDIA HSL Bytecode Analysis and Execution</h3>
+                        <p class="project-tech">C++ • Embedded Systems • I2C</p>
+                        <p>Engineered a system to analyze and execute HSL bytecode for I2C operations, enhancing debugging and performance insights.</p>
+                        <div class="project-tags">
+                            <span class="tag">Embedded</span>
+                            <span class="tag">C++</span>
+                            <span class="tag">HSL Bytecode</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://codingbytes.com/wp-content/uploads/2022/03/full-stack-web-development.jpg" alt="Real-time Chat App">
+                        <div class="project-links">
+                            <!--<a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>-->
+                            <a href="https://github.com/Divya-Shetti/Realtime-Chat-Application.git" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Quasario – Real-time Chat App</h3>
+                        <p class="project-tech">MERN • Socket.io • TailwindCSS</p>
+                        <p>Built a full-stack chat app with real-time messaging, JWT auth, global state with Zustand, and modern UI using DaisyUI.</p>
+                        <div class="project-tags">
+                            <span class="tag">Web App</span>
+                            <span class="tag">MERN</span>
+                            <span class="tag">Socket.io</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://wallpapercat.com/w/full/8/4/8/1255749-2560x1080-desktop-dual-monitors-nvidia-wallpaper-image.jpg" alt="LLM Perception Study">
+                        <!--<div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>-->
+                    </div>
+                    <div class="project-content">
+                        <h3>NVIDIA – LLM Paired Comparison Experiment</h3>
+                        <p class="project-tech">Python • Gemini API • Statistics</p>
+                        <p>Conducted a study on how Gemini models perceive sharpness in paired image comparisons with statistical analysis of responses.</p>
+                        <div class="project-tags">
+                            <span class="tag">LLM</span>
+                            <span class="tag">Research</span>
+                            <span class="tag">Image Processing</span>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+            
+            <div class="projects-cta">
+                <a href="business-cases.html#cases" class="btn">View Detailed Business Cases Algorithm Analysis<i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="projects-cta">
+                <a href="company-cases.html" class="btn">View Details on Interesting Company Innovations <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+<!--
+    <section id="cases" class="cases-section">
+        <div class="container">
+            <h2 class="section-title">Business Cases</h2>
+            
+            <div id="case1" class="case-study">
+                <h3>Case 1: Logistics Optimization</h3>
+                
+                <div class="case-section">
+                    <h4>1. Business Problem Statement</h4>
+                    <p>A courier company needs to optimize delivery routes to minimize fuel costs and delivery time while serving all customers in a metropolitan area.</p>
+                    <p><strong>Domain:</strong> Logistics, Transportation</p>
+                </div>
+                
+                <div class="case-section">
+                    <h4>2. Theoretical Foundation</h4>
+                    <p>We implemented a modified Traveling Salesman Problem (TSP) solution using:</p>
+                    <ul>
+                        <li><strong>Algorithm:</strong> Christofides algorithm (approximation)</li>
+                        <li><strong>Time Complexity:</strong> O(n³)</li>
+                        <li><strong>Space Complexity:</strong> O(n²)</li>
+                    </ul>
+                    <p>We initially considered Dijkstra's algorithm but found that incorporating spatial heuristics with A* search provided better performance for our specific use case.</p>
+                </div>
+                
+                <div class="case-section">
+                    <h4>3. Real-World Usage Scenario</h4>
+                    <p>The solution was implemented for a mid-sized courier company delivering packages across a city with 500+ daily delivery points. City blocks were modeled as graphs with traffic patterns and delivery windows as weighted edges.</p>
+                    <div class="flow-diagram">
+                        <img src="https://via.placeholder.com/600x300?text=Flow+Diagram" alt="Solution Flow Diagram">
+                    </div>
+                </div>
+                
+                <div class="case-section">
+                    <h4>4. Design & Architecture</h4>
+                    <div class="system-design">
+                        <img src="https://via.placeholder.com/600x400?text=System+Design" alt="System Architecture">
+                    </div>
+                    <p><strong>Tech Stack:</strong> Python, Google Maps API, PostgreSQL, Flask</p>
+                </div>
+                
+                <div class="case-section">
+                    <h4>5. Code Snippet</h4>
+                    <pre><code class="language-python">def christofides_tsp(graph):
+    # Step 1: Create Minimum Spanning Tree
+    mst = prim_mst(graph)
+    
+    # Step 2: Find odd degree vertices
+    odd_vertices = find_odd_degree_vertices(mst)
+    
+    # Step 3: Minimum weight perfect matching
+    matching = minimum_weight_matching(graph, odd_vertices)
+    
+    # Step 4: Combine to form Eulerian circuit
+    eulerian_graph = combine_mst_and_matching(mst, matching)
+    
+    # Step 5: Hamiltonian circuit from Eulerian
+    return make_hamiltonian(eulerian_graph)</code></pre>
+                    <a href="#" class="github-link">View full code on GitHub <i class="fab fa-github"></i></a>
+                </div>
+                
+                <div class="case-section">
+                    <h4>6. Analysis and Results</h4>
+                    <div class="results-graph">
+                        <img src="https://via.placeholder.com/600x300?text=Performance+Metrics" alt="Performance Results">
+                    </div>
+                    <p>The solution reduced total delivery distance by 22% and improved on-time deliveries from 78% to 92%.</p>
+                </div>
+                
+                <div class="case-section">
+                    <h4>8. Reflection and Improvements</h4>
+                    <p><strong>What worked well:</strong> The approximation algorithm provided near-optimal results with reasonable computation time.</p>
+                    <p><strong>Improvements:</strong> Incorporating real-time traffic data could further optimize routes. A machine learning model to predict delivery times could enhance the scheduling component.</p>
+                </div>
+            </div>
+            
+            
+            
+        </div>
+    </section>
+-->
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p style="margin: 0; padding: 0; font-family: inherit; color: inherit;">
+                        <i class="fas fa-envelope"></i>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=divyashetti72@gmail.com" 
+                            target="_blank" 
+                            style="text-decoration: none; color: inherit; font-family: inherit;">
+                            divyashetti72@gmail.com
+                        </a>
+                        
+                    </p>
+                    <br>
+                    <!--<p><i class="fas fa-phone"></i> (123) 456-7890</p>-->
+                    <p><i class="fas fa-map-marker-alt"></i> Hubli, India</p>
+                    
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/divyashree-shetti-00b97826a/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/Divya-Shetti" target="_blank"><i class="fab fa-github"></i></a>
+                        <!--<a href="#"><i class="fab fa-twitter"></i></a>-->
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form action="https://formspree.io/f/xnnvnpgy" method="POST">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                        <div id="form-message" role="alert" aria-live="polite"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 My Google Portfolio. Inspired by Google's design principles.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        // Typing animation
+        var typed = new Typed('.typing', {
+            strings: ["Software Engineer", "Cloud Enthusiast", "Backend Developer", "Problem Solver"],
+            typeSpeed: 50,
+            backSpeed: 30,
+            loop: true
+        });
+        
+        // Smooth scrolling for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Handle form submission with fetch and show thank you message
+    const form = document.getElementById("contact-form");
+    const formMessage = document.getElementById("form-message");
+
+    form.addEventListener("submit", async function (e) {
+      e.preventDefault();
+
+      formMessage.textContent = ""; // Clear previous messages
+      const formData = new FormData(form);
+
+      try {
+        const response = await fetch(form.action, {
+          method: form.method,
+          body: formData,
+          headers: {
+            Accept: "application/json",
+          },
+        });
+
+        if (response.ok) {
+          formMessage.textContent = "Thank you! Your message has been sent. I will reply soon.";
+          form.reset();
+        } else {
+          const data = await response.json();
+          if (data.errors) {
+            formMessage.textContent = data.errors.map((error) => error.message).join(", ");
+          } else {
+            formMessage.textContent = "Oops! There was a problem submitting your form.";
+          }
+        }
+      } catch (error) {
+        formMessage.textContent = "Oops! There was a problem submitting your form.";
+      }
+    });
+    </script>
+</body>
+</html>
